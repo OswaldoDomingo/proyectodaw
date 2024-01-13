@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/public_html/proyectodaw/
-    - /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=/home/p261985/proyectodaw/
+    - /bin/resync -av /$DEPLOYPATH
