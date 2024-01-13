@@ -7,9 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
 
     $loginModel = new Login();
-    if ($loginModel->checkCredentials($username, $password)) {
+    if ($loginModel->comprobarCredenciales($username, $password)) {
         // Usuario autenticado, redirigir a la página privada
-        header("Location: index.php?page=privateArea");
+        header("Location: index.php?page=home");
         exit();
     } else {
         // Autenticación fallida, mostrar error
