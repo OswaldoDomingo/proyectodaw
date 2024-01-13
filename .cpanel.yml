@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/public_html/proyectodaw/
+    - /bin/cp index.html $DEPLOYPATH
