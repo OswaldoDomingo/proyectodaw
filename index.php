@@ -14,9 +14,6 @@ switch ($page) {
     case 'login':
         require 'controller/formLogin.php';
         break;
-    case 'login':
-        require 'controller/formLogin.php';
-        break;
     default:
         require 'controller/error.php'; // Controlador para página de error
 }
