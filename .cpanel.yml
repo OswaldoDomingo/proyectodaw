@@ -2,10 +2,12 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/p261985/public_html/proyectodaw/
-    - /bin/cp -R config/ $DEPLOYPATH
-    - /bin/cp -R controller/ $DEPLOYPATH
-    - /bin/cp -R model/ $DEPLOYPATH
-    - /bin/cp -R view/ $DEPLOYPATH
+    # Copia los contenidos de cada directorio específicamente
+    - /bin/cp -R config/. $DEPLOYPATH/config/
+    - /bin/cp -R controller/. $DEPLOYPATH/controller/
+    - /bin/cp -R model/. $DEPLOYPATH/model/
+    - /bin/cp -R view/. $DEPLOYPATH/view/
+    # Copia archivos individuales
     - /bin/cp .cpanel.yml $DEPLOYPATH
     - /bin/cp .gitignore $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
