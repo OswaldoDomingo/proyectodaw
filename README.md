@@ -19,3 +19,5 @@
     </Directory>
 </VirtualHost>
 ```
+## La idea del proyecto
+Tener una entrada index.html desde donse se irán haciendo todas las peticiones al los controladores y desde ahí se cargarán las vistas.

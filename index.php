@@ -1,8 +1,6 @@
 <?php
 // index.php - Punto de entrada de la aplicación
 
-// Este es un enrutador muy básico
-
 // Obtén la página desde la URL, por defecto será 'home'
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
